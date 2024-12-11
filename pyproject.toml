@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "rc-atis-etl-incrementalload"
+version = "0.1.0"
+description = "ETL Process intended to perform the incremental load for the RC-ATIS database"
+authors = ["Evan <evan.harley@gov.bc.ca>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+sqlalchemy = "^2.0.36"
+pyodbc = "^5.2.0"
+tqdm = "^4.67.1"
+xlrd = "^2.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
