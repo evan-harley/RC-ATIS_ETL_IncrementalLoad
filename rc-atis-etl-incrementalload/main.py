@@ -136,7 +136,7 @@ class ETL:
             self.write_data((rc_data, rc_rp_data))
 
     @staticmethod
-    def convert_date(serial_date) -> datetime:
+    def convert_date(serial_date: float) -> datetime:
         converted = datetime(*xlrd.xldate_as_tuple(serial_date, 0))
         return converted
 
